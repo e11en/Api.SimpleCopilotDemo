@@ -1,0 +1,10 @@
+﻿global using Api.CopilotDemo;
+global using Api.CopilotDemo.Models;
+global using Api.CopilotDemo.Service;
+global using Azure;
+global using Azure.AI.OpenAI;
+global using Azure.Search.Documents;
+global using Azure.Search.Documents.Indexes;
+global using Azure.Search.Documents.Models;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Options;

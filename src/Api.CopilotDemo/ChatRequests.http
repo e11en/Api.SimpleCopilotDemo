@@ -1,0 +1,29 @@
+﻿@HostAddress = https://localhost:7223
+
+Post {{HostAddress}}/chat
+Content-Type: application/json
+
+{
+  "input": "Which dog breed can be aggressive?"
+}
+###
+
+Post {{HostAddress}}/chat
+Content-Type: application/json
+
+{
+  "input": "Which dog breed can be aggressive?",
+  "chatHistory": [
+    {"role": "user", "message": "What are some dog breeds?"},
+    {"role": "system", "message": "There are many dog breeds, some examples include Labrador Retriever, German Shepherd, Golden Retriever, Bulldog, Poodle, Beagle, Rottweiler, Boxer, Siberian Husky, and Chihuahua."}
+  ]
+}
+###
+
+Post {{HostAddress}}/chat
+Content-Type: application/json
+
+{
+  "input": "Which cats are cute?"
+}
+###
